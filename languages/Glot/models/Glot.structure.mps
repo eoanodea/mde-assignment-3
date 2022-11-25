@@ -304,6 +304,9 @@
     <property role="R5$K7" value="true" />
     <property role="TrG5h" value="content" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="6N5CCpaZrwb" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6N5CCpaVAoe">
     <property role="EcuMT" value="7837849424174671374" />
@@ -338,9 +341,23 @@
       <property role="TrG5h" value="index_id" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyj" id="6N5CCpaXYHr" role="1TKVEi">
-      <property role="IQ2ns" value="7837849424175295323" />
-      <property role="20kJfa" value="index_ref_individual" />
+    <node concept="1TJgyj" id="6N5CCpb0Amj" role="1TKVEi">
+      <property role="IQ2ns" value="7837849424175981971" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="individuals" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6N5CCpb0_IQ" resolve="ConceptHub" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6N5CCpb0_IQ">
+    <property role="EcuMT" value="7837849424175979446" />
+    <property role="3GE5qa" value="Content Concern" />
+    <property role="TrG5h" value="ConceptHub" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="6N5CCpb0_Oz" role="1TKVEi">
+      <property role="IQ2ns" value="7837849424175979811" />
+      <property role="20kJfa" value="individual" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6N5CCpaVBMz" resolve="Individual" />
     </node>
   </node>

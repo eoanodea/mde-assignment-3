@@ -17,6 +17,7 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAttribute = createDescriptorForAttribute();
+  /*package*/ final ConceptDescriptor myConceptConceptHub = createDescriptorForConceptHub();
   /*package*/ final ConceptDescriptor myConceptElement = createDescriptorForElement();
   /*package*/ final ConceptDescriptor myConceptEntity = createDescriptorForEntity();
   /*package*/ final ConceptDescriptor myConceptFeature = createDescriptorForFeature();
@@ -44,7 +45,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAttribute, myConceptElement, myConceptEntity, myConceptFeature, myConceptForm, myConceptIndex, myConceptIndividual, myConceptPage, myConceptReference, myConceptSystem, myConceptcontent, myConceptdynamic_content);
+    return Arrays.asList(myConceptAttribute, myConceptConceptHub, myConceptElement, myConceptEntity, myConceptFeature, myConceptForm, myConceptIndex, myConceptIndividual, myConceptPage, myConceptReference, myConceptSystem, myConceptcontent, myConceptdynamic_content);
   }
 
   @Override
@@ -53,6 +54,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.Attribute:
         return myConceptAttribute;
+      case LanguageConceptSwitch.ConceptHub:
+        return myConceptConceptHub;
       case LanguageConceptSwitch.Element:
         return myConceptElement;
       case LanguageConceptSwitch.Entity:
@@ -98,6 +101,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.property("type", 0x1f05a1bb5d897c31L).type(MetaIdFactory.dataTypeId(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c33L)).origin("2235370616159566897").done();
     b.property("isPrimaryKey", 0x6c21e3da475f0862L).type(PrimitiveTypeId.BOOLEAN).origin("7791759356967454818").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForConceptHub() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Glot", "ConceptHub", 0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864b025bb6L);
+    b.class_(false, false, false);
+    b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/7837849424175979446");
+    b.version(3);
+    b.associate("individual", 0x6cc5a2864b025d23L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee7ca3L).optional(false).origin("7837849424175979811").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForElement() {
@@ -147,7 +158,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/7837849424175293994");
     b.version(3);
     b.property("index_id", 0x6cc5a2864af7e985L).type(PrimitiveTypeId.INTEGER).origin("7837849424175294853").done();
-    b.associate("index_ref_individual", 0x6cc5a2864af7eb5bL).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee7ca3L).optional(true).origin("7837849424175295323").done();
+    b.aggregate("individuals", 0x6cc5a2864b026593L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864b025bb6L).optional(true).ordered(true).multiple(true).origin("7837849424175981971").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIndividual() {
@@ -197,6 +208,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForcontent() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Glot", "content", 0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee634dL);
     b.class_(false, true, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/7837849424174670669");
     b.version(3);
     return b.create();

@@ -10,6 +10,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Attribute;
+  private ConceptPresentation props_ConceptHub;
   private ConceptPresentation props_Element;
   private ConceptPresentation props_Entity;
   private ConceptPresentation props_Feature;
@@ -34,6 +35,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Attribute = cpb.create();
         }
         return props_Attribute;
+      case LanguageConceptSwitch.ConceptHub:
+        if (props_ConceptHub == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864b025bb6L, 0x6cc5a2864b025d23L, "individual", "", "");
+          props_ConceptHub = cpb.create();
+        }
+        return props_ConceptHub;
       case LanguageConceptSwitch.Element:
         if (props_Element == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -65,14 +73,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Index:
         if (props_Index == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Index");
+          cpb.presentationByName();
           props_Index = cpb.create();
         }
         return props_Index;
       case LanguageConceptSwitch.Individual:
         if (props_Individual == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Individual");
+          cpb.presentationByName();
           props_Individual = cpb.create();
         }
         return props_Individual;
