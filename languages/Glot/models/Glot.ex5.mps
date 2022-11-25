@@ -11,9 +11,15 @@
       <concept id="7837849424174671374" name="Glot.structure.dynamic_content" flags="ng" index="AaWi8">
         <reference id="7837849424174674942" name="dynamic_content_ref_Entitity" index="AaX5S" />
       </concept>
-      <concept id="7837849424174677155" name="Glot.structure.Individual" flags="ng" index="AaXS_" />
+      <concept id="7837849424174677155" name="Glot.structure.Individual" flags="ng" index="AaXS_">
+        <property id="7837849424174680256" name="row" index="AaMD6" />
+      </concept>
       <concept id="7837849424175293994" name="Glot.structure.Index" flags="ng" index="Ac$iG">
         <property id="7837849424175294853" name="index_id" index="Ac$G3" />
+        <child id="7837849424175981971" name="individuals" index="BLWsl" />
+      </concept>
+      <concept id="7837849424175979446" name="Glot.structure.ConceptHub" flags="ng" index="BLZ$K">
+        <reference id="7837849424175979811" name="individual" index="BLZY_" />
       </concept>
       <concept id="2235370616159566896" name="Glot.structure.Attribute" flags="ng" index="12zdQb">
         <property id="7791759356967454818" name="isPrimaryKey" index="FvIIS" />
@@ -32,6 +38,8 @@
         <reference id="2235370616159566914" name="foreignKey" index="12zdRT" />
       </concept>
       <concept id="3796981848804124687" name="Glot.structure.Page" flags="ng" index="3S8JVg">
+        <property id="7837849424174666211" name="URL" index="AaZd_" />
+        <reference id="7837849424174667543" name="page_ref_page" index="AaZmh" />
         <child id="7837849424174679264" name="content" index="AaMpA" />
       </concept>
     </language>
@@ -107,15 +115,23 @@
         <property role="TrG5h" value="url" />
       </node>
     </node>
-    <node concept="3S8JVg" id="6N5CCpaZl3f" role="3S8J4p">
-      <property role="TrG5h" value="hello" />
-      <node concept="Ac$iG" id="6N5CCpaZl3s" role="AaMpA">
-        <property role="Ac$G3" value="65" />
+    <node concept="3S8JVg" id="6UVzr4Fecpd" role="3S8J4p">
+      <property role="TrG5h" value="Home" />
+      <property role="AaZd_" value="website.com" />
+      <ref role="AaZmh" node="6UVzr4Fecpd" resolve="Home" />
+      <node concept="Ac$iG" id="6UVzr4Fecpf" role="AaMpA">
+        <property role="Ac$G3" value="1" />
+        <property role="TrG5h" value="brand" />
         <ref role="AaX5S" node="3AgXDBUscn6" resolve="brand" />
+        <node concept="BLZ$K" id="6UVzr4Fg2Wn" role="BLWsl">
+          <ref role="BLZY_" node="6UVzr4Fecpq" />
+        </node>
       </node>
-      <node concept="AaXS_" id="6N5CCpaZqf6" role="AaMpA" />
-      <node concept="AaXS_" id="6N5CCpaZqfe" role="AaMpA" />
-      <node concept="Ac$iG" id="6N5CCpaZqIn" role="AaMpA" />
+      <node concept="AaXS_" id="6UVzr4Fecpq" role="AaMpA">
+        <property role="TrG5h" value="concept" />
+        <property role="AaMD6" value="2" />
+        <ref role="AaX5S" node="3AgXDBUrUxC" resolve="category" />
+      </node>
     </node>
   </node>
 </model>

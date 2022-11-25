@@ -218,7 +218,7 @@
     <node concept="1TJgyi" id="6N5CCpaV_7z" role="1TKVEl">
       <property role="IQ2nx" value="7837849424174666211" />
       <property role="TrG5h" value="URL" />
-      <ref role="AX2Wp" node="1W5CrHtynKN" resolve="DataType" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="6N5CCpaV_sn" role="1TKVEi">
       <property role="IQ2ns" value="7837849424174667543" />
@@ -230,7 +230,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="content" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6N5CCpaVAdd" resolve="content" />
+      <ref role="20lvS9" node="6N5CCpaVAdd" resolve="Content" />
     </node>
   </node>
   <node concept="1TIwiD" id="3iL_HZc_9R0">
@@ -302,7 +302,7 @@
     <property role="EcuMT" value="7837849424174670669" />
     <property role="3GE5qa" value="Content Concern" />
     <property role="R5$K7" value="true" />
-    <property role="TrG5h" value="content" />
+    <property role="TrG5h" value="Content" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="6N5CCpaZrwb" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -313,7 +313,7 @@
     <property role="3GE5qa" value="Content Concern" />
     <property role="TrG5h" value="dynamic_content" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" node="6N5CCpaVAdd" resolve="content" />
+    <ref role="1TJDcQ" node="6N5CCpaVAdd" resolve="Content" />
     <node concept="1TJgyj" id="6N5CCpaVBfY" role="1TKVEi">
       <property role="IQ2ns" value="7837849424174674942" />
       <property role="20kJfa" value="dynamic_content_ref_Entitity" />

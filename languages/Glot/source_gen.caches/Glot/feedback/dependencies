@@ -27,5 +27,66 @@
   <uses module="3f98f4e2-decf-4e97-bf80-9109e8b759ab(jetbrains.mps.lang.feedback.problem.rt)" kind="rt+dp" />
   <uses module="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt+dp" />
   <uses module="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+  <dependency className="Glot.feedback.Attribute_FeedbackFeedback">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.stream.Stream" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.api.FeedbackProvider" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.BaseMessageProvider" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.FailingPropertyConstraintContext" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.FailingPropertyConstraintProblemId" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.MessageProvider" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.feedback.api.BaseFeedbackDescriptor" />
+  </dependency>
+  <dependency className="Glot.feedback.Entity_FeedbackFeedback">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.stream.Stream" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.api.FeedbackProvider" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.BaseMessageProvider" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.FailingPropertyConstraintContext" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.FailingPropertyConstraintProblemId" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.MessageProvider" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.feedback.api.BaseFeedbackDescriptor" />
+  </dependency>
+  <dependency className="Glot.feedback.GeneratedFeedbackAspectFeedback">
+    <classNode dependClassName="Glot.feedback.Attribute_FeedbackFeedback" />
+    <classNode dependClassName="Glot.feedback.Entity_FeedbackFeedback" />
+    <classNode dependClassName="Glot.feedback.Reference_FeedbackFeedback" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.stream.Stream" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.api.FeedbackPerConceptDescriptor" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.feedback.api.FeedbackAspect" />
+  </dependency>
+  <dependency className="Glot.feedback.Reference_FeedbackFeedback">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.stream.Stream" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.api.FeedbackProvider" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.BaseMessageProvider" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.FailingPropertyConstraintContext" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.FailingPropertyConstraintProblemId" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.MessageProvider" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.feedback.api.BaseFeedbackDescriptor" />
+  </dependency>
 </dependenciesRoot>
 
