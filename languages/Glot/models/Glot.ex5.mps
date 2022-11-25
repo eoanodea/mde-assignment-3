@@ -30,6 +30,7 @@
         <property id="4148086397999896669" name="subversion" index="33YiV4" />
         <child id="2235370616159566889" name="entities" index="12zdQi" />
         <child id="3796981848804124614" name="pages" index="3S8J4p" />
+        <child id="3796981848804257413" name="forms" index="3S9fxq" />
       </concept>
       <concept id="2235370616159566886" name="Glot.structure.Entity" flags="ng" index="12zdQt">
         <child id="2235370616159566894" name="features" index="12zdQl" />
@@ -41,6 +42,16 @@
         <property id="7837849424174666211" name="URL" index="AaZd_" />
         <reference id="7837849424174667543" name="page_ref_page" index="AaZmh" />
         <child id="7837849424174679264" name="content" index="AaMpA" />
+      </concept>
+      <concept id="3796981848804203971" name="Glot.structure.Element" flags="ng" index="3S9gGs">
+        <property id="3796981848804203976" name="tooltip" index="3S9gGn" />
+        <property id="3796981848804203974" name="label" index="3S9gGp" />
+        <reference id="3796981848804203985" name="attribute" index="3S9gGe" />
+      </concept>
+      <concept id="3796981848804203968" name="Glot.structure.Form" flags="ng" index="3S9gGv">
+        <property id="3796981848804204064" name="method" index="3S9gzZ" />
+        <reference id="3796981848804619431" name="entity" index="3SaQ9S" />
+        <child id="3796981848804203987" name="elements" index="3S9gGc" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -123,14 +134,45 @@
         <property role="Ac$G3" value="1" />
         <property role="TrG5h" value="brand" />
         <ref role="AaX5S" node="3AgXDBUscn6" resolve="brand" />
-        <node concept="BLZ$K" id="6UVzr4Fg2Wn" role="BLWsl">
-          <ref role="BLZY_" node="6UVzr4Fecpq" />
+        <node concept="BLZ$K" id="6UVzr4FqJ00" role="BLWsl">
+          <ref role="BLZY_" node="6UVzr4Fecpq" resolve="concept" />
+        </node>
+      </node>
+      <node concept="Ac$iG" id="6UVzr4FqJ0f" role="AaMpA">
+        <property role="TrG5h" value="brand" />
+        <property role="Ac$G3" value="2" />
+        <ref role="AaX5S" node="3AgXDBUrUxC" resolve="category" />
+        <node concept="BLZ$K" id="6UVzr4FqJ0l" role="BLWsl">
+          <ref role="BLZY_" node="6UVzr4Fecpq" resolve="concept" />
         </node>
       </node>
       <node concept="AaXS_" id="6UVzr4Fecpq" role="AaMpA">
         <property role="TrG5h" value="concept" />
         <property role="AaMD6" value="2" />
         <ref role="AaX5S" node="3AgXDBUrUxC" resolve="category" />
+      </node>
+    </node>
+    <node concept="3S9gGv" id="6UVzr4FkemX" role="3S9fxq">
+      <property role="TrG5h" value="Category" />
+      <property role="3S9gzZ" value="3iL_HZc_9Ss/POST" />
+      <ref role="3SaQ9S" node="3AgXDBUrUxC" resolve="category" />
+      <node concept="3S9gGs" id="6UVzr4FkemZ" role="3S9gGc">
+        <property role="TrG5h" value="Name" />
+        <property role="3S9gGp" value="Name" />
+        <property role="3S9gGn" value="Enter category name" />
+        <ref role="3S9gGe" node="3AgXDBUoItS" resolve="name" />
+      </node>
+      <node concept="3S9gGs" id="6UVzr4Fken5" role="3S9gGc">
+        <property role="TrG5h" value="Description" />
+        <property role="3S9gGp" value="Description" />
+        <property role="3S9gGn" value="Enter category desc" />
+        <ref role="3S9gGe" node="3AgXDBUoIu0" resolve="description" />
+      </node>
+      <node concept="3S9gGs" id="6UVzr4Fken8" role="3S9gGc">
+        <property role="TrG5h" value="Image" />
+        <property role="3S9gGp" value="Image" />
+        <property role="3S9gGn" value="Select an image" />
+        <ref role="3S9gGe" node="3AgXDBUrUy9" resolve="image" />
       </node>
     </node>
   </node>
