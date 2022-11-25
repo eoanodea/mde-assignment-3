@@ -23,4 +23,7 @@ CREATE TABLE brand (
   url VARCHAR(255)
 )
 
-<!TextGen not found for 'Glot.structure.Page'!>
+Home
+<!TextGen not found for 'Glot.structure.Index'!>, 
+<!TextGen not found for 'Glot.structure.Individual'!>, 
+<!TextGen not found for 'Glot.structure.Individual'!>
