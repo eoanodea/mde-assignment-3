@@ -228,7 +228,8 @@
     <node concept="1TJgyj" id="6N5CCpaVCjw" role="1TKVEi">
       <property role="IQ2ns" value="7837849424174679264" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="cont" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6N5CCpaVAdd" resolve="content" />
     </node>
   </node>
@@ -325,6 +326,22 @@
       <property role="IQ2nx" value="7837849424174680256" />
       <property role="TrG5h" value="row" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6N5CCpaXYoE">
+    <property role="EcuMT" value="7837849424175293994" />
+    <property role="3GE5qa" value="Content Concern" />
+    <property role="TrG5h" value="Index" />
+    <ref role="1TJDcQ" node="6N5CCpaVAoe" resolve="dynamic_content" />
+    <node concept="1TJgyi" id="6N5CCpaXYA5" role="1TKVEl">
+      <property role="IQ2nx" value="7837849424175294853" />
+      <property role="TrG5h" value="index_id" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="6N5CCpaXYHr" role="1TKVEi">
+      <property role="IQ2ns" value="7837849424175295323" />
+      <property role="20kJfa" value="index_ref_individual" />
+      <ref role="20lvS9" node="6N5CCpaVBMz" resolve="Individual" />
     </node>
   </node>
 </model>
