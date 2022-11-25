@@ -18,6 +18,7 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAttribute = createDescriptorForAttribute();
   /*package*/ final ConceptDescriptor myConceptConceptHub = createDescriptorForConceptHub();
+  /*package*/ final ConceptDescriptor myConceptContent = createDescriptorForContent();
   /*package*/ final ConceptDescriptor myConceptElement = createDescriptorForElement();
   /*package*/ final ConceptDescriptor myConceptEntity = createDescriptorForEntity();
   /*package*/ final ConceptDescriptor myConceptFeature = createDescriptorForFeature();
@@ -27,7 +28,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptPage = createDescriptorForPage();
   /*package*/ final ConceptDescriptor myConceptReference = createDescriptorForReference();
   /*package*/ final ConceptDescriptor myConceptSystem = createDescriptorForSystem();
-  /*package*/ final ConceptDescriptor myConceptcontent = createDescriptorForcontent();
   /*package*/ final ConceptDescriptor myConceptdynamic_content = createDescriptorFordynamic_content();
   /*package*/ final EnumerationDescriptor myEnumerationDataType = new EnumerationDescriptor_DataType();
   /*package*/ final EnumerationDescriptor myEnumerationMethodType = new EnumerationDescriptor_MethodType();
@@ -45,7 +45,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAttribute, myConceptConceptHub, myConceptElement, myConceptEntity, myConceptFeature, myConceptForm, myConceptIndex, myConceptIndividual, myConceptPage, myConceptReference, myConceptSystem, myConceptcontent, myConceptdynamic_content);
+    return Arrays.asList(myConceptAttribute, myConceptConceptHub, myConceptContent, myConceptElement, myConceptEntity, myConceptFeature, myConceptForm, myConceptIndex, myConceptIndividual, myConceptPage, myConceptReference, myConceptSystem, myConceptdynamic_content);
   }
 
   @Override
@@ -56,6 +56,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptAttribute;
       case LanguageConceptSwitch.ConceptHub:
         return myConceptConceptHub;
+      case LanguageConceptSwitch.Content:
+        return myConceptContent;
       case LanguageConceptSwitch.Element:
         return myConceptElement;
       case LanguageConceptSwitch.Entity:
@@ -74,8 +76,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptReference;
       case LanguageConceptSwitch.System:
         return myConceptSystem;
-      case LanguageConceptSwitch.content:
-        return myConceptcontent;
       case LanguageConceptSwitch.dynamic_content:
         return myConceptdynamic_content;
       default:
@@ -109,6 +109,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/7837849424175979446");
     b.version(3);
     b.associate("individual", 0x6cc5a2864b025d23L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee7ca3L).optional(false).origin("7837849424175979811").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForContent() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Glot", "Content", 0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee634dL);
+    b.class_(false, true, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/7837849424174670669");
+    b.version(3);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForElement() {
@@ -177,7 +185,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/3796981848804124687");
     b.version(3);
-    b.property("URL", 0x6cc5a2864aee51e3L).type(MetaIdFactory.dataTypeId(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c33L)).origin("7837849424174666211").done();
+    b.property("URL", 0x6cc5a2864aee51e3L).type(PrimitiveTypeId.STRING).origin("7837849424174666211").done();
     b.associate("page_ref_page", 0x6cc5a2864aee5717L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x34b196dfcc93680fL).optional(true).origin("7837849424174667543").done();
     b.aggregate("content", 0x6cc5a2864aee84e0L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee634dL).optional(true).ordered(true).multiple(true).origin("7837849424174679264").done();
     return b.create();
@@ -205,18 +213,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("forms", 0x34b196dfcc956e85L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x34b196dfcc949dc0L).optional(true).ordered(true).multiple(true).origin("3796981848804257413").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForcontent() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Glot", "content", 0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee634dL);
-    b.class_(false, true, false);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/7837849424174670669");
-    b.version(3);
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorFordynamic_content() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Glot", "dynamic_content", 0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee660eL);
     b.class_(false, true, false);
-    // extends: Glot.structure.content
+    // extends: Glot.structure.Content
     b.super_(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee634dL);
     b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/7837849424174671374");
     b.version(3);

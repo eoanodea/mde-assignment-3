@@ -11,6 +11,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Attribute;
   private ConceptPresentation props_ConceptHub;
+  private ConceptPresentation props_Content;
   private ConceptPresentation props_Element;
   private ConceptPresentation props_Entity;
   private ConceptPresentation props_Feature;
@@ -20,7 +21,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Page;
   private ConceptPresentation props_Reference;
   private ConceptPresentation props_System;
-  private ConceptPresentation props_content;
   private ConceptPresentation props_dynamic_content;
 
   @Override
@@ -42,6 +42,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ConceptHub = cpb.create();
         }
         return props_ConceptHub;
+      case LanguageConceptSwitch.Content:
+        if (props_Content == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Content = cpb.create();
+        }
+        return props_Content;
       case LanguageConceptSwitch.Element:
         if (props_Element == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -105,12 +111,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_System = cpb.create();
         }
         return props_System;
-      case LanguageConceptSwitch.content:
-        if (props_content == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_content = cpb.create();
-        }
-        return props_content;
       case LanguageConceptSwitch.dynamic_content:
         if (props_dynamic_content == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
