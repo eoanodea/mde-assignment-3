@@ -11,8 +11,9 @@
       <concept id="7837849424174671374" name="Glot.structure.dynamic_content" flags="ng" index="AaWi8">
         <reference id="7837849424174674942" name="dynamic_content_ref_Entitity" index="AaX5S" />
       </concept>
-      <concept id="7837849424174677155" name="Glot.structure.Individual" flags="ng" index="AaXS_">
-        <property id="7837849424174680256" name="row" index="AaMD6" />
+      <concept id="7837849424174677155" name="Glot.structure.Individual" flags="ng" index="AaXS_" />
+      <concept id="7837849424175293994" name="Glot.structure.Index" flags="ng" index="Ac$iG">
+        <property id="7837849424175294853" name="index_id" index="Ac$G3" />
       </concept>
       <concept id="2235370616159566896" name="Glot.structure.Attribute" flags="ng" index="12zdQb">
         <property id="7791759356967454818" name="isPrimaryKey" index="FvIIS" />
@@ -31,8 +32,7 @@
         <reference id="2235370616159566914" name="foreignKey" index="12zdRT" />
       </concept>
       <concept id="3796981848804124687" name="Glot.structure.Page" flags="ng" index="3S8JVg">
-        <reference id="7837849424174667543" name="page_ref_page" index="AaZmh" />
-        <child id="7837849424174679264" name="cont" index="AaMpA" />
+        <child id="7837849424174679264" name="content" index="AaMpA" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -45,14 +45,6 @@
     <property role="TrG5h" value="Amazon" />
     <property role="12zSj7" value="1" />
     <property role="33YiV4" value="1" />
-    <node concept="3S8JVg" id="6N5CCpaXUmw" role="3S8J4p">
-      <property role="TrG5h" value="hello" />
-      <ref role="AaZmh" node="6N5CCpaXUmw" resolve="hello" />
-      <node concept="AaXS_" id="6N5CCpaXUoe" role="AaMpA">
-        <property role="AaMD6" value="4" />
-        <ref role="AaX5S" node="3AgXDBUscn6" resolve="brand" />
-      </node>
-    </node>
     <node concept="12zdQt" id="3AgXDBUoItG" role="12zdQi">
       <property role="TrG5h" value="product" />
       <node concept="12zdQb" id="3AgXDBUoItN" role="12zdQl">
@@ -114,6 +106,15 @@
       <node concept="12zdQb" id="6KaI3IYZsjC" role="12zdQl">
         <property role="TrG5h" value="url" />
       </node>
+    </node>
+    <node concept="3S8JVg" id="6N5CCpaZl3f" role="3S8J4p">
+      <property role="TrG5h" value="hello" />
+      <node concept="Ac$iG" id="6N5CCpaZl3s" role="AaMpA">
+        <property role="Ac$G3" value="65" />
+        <ref role="AaX5S" node="3AgXDBUscn6" resolve="brand" />
+      </node>
+      <node concept="AaXS_" id="6N5CCpaZqf6" role="AaMpA" />
+      <node concept="AaXS_" id="6N5CCpaZqfe" role="AaMpA" />
     </node>
   </node>
 </model>

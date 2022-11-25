@@ -168,7 +168,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.property("URL", 0x6cc5a2864aee51e3L).type(MetaIdFactory.dataTypeId(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c33L)).origin("7837849424174666211").done();
     b.associate("page_ref_page", 0x6cc5a2864aee5717L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x34b196dfcc93680fL).optional(true).origin("7837849424174667543").done();
-    b.aggregate("cont", 0x6cc5a2864aee84e0L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee634dL).optional(true).ordered(true).multiple(false).origin("7837849424174679264").done();
+    b.aggregate("content", 0x6cc5a2864aee84e0L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee634dL).optional(true).ordered(true).multiple(true).origin("7837849424174679264").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForReference() {
