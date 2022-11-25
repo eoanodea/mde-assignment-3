@@ -21,9 +21,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptEntity = createDescriptorForEntity();
   /*package*/ final ConceptDescriptor myConceptFeature = createDescriptorForFeature();
   /*package*/ final ConceptDescriptor myConceptForm = createDescriptorForForm();
+  /*package*/ final ConceptDescriptor myConceptIndividual = createDescriptorForIndividual();
   /*package*/ final ConceptDescriptor myConceptPage = createDescriptorForPage();
   /*package*/ final ConceptDescriptor myConceptReference = createDescriptorForReference();
   /*package*/ final ConceptDescriptor myConceptSystem = createDescriptorForSystem();
+  /*package*/ final ConceptDescriptor myConceptcontent = createDescriptorForcontent();
+  /*package*/ final ConceptDescriptor myConceptdynamic_content = createDescriptorFordynamic_content();
   /*package*/ final EnumerationDescriptor myEnumerationDataType = new EnumerationDescriptor_DataType();
   /*package*/ final EnumerationDescriptor myEnumerationMethodType = new EnumerationDescriptor_MethodType();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -40,7 +43,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAttribute, myConceptElement, myConceptEntity, myConceptFeature, myConceptForm, myConceptPage, myConceptReference, myConceptSystem);
+    return Arrays.asList(myConceptAttribute, myConceptElement, myConceptEntity, myConceptFeature, myConceptForm, myConceptIndividual, myConceptPage, myConceptReference, myConceptSystem, myConceptcontent, myConceptdynamic_content);
   }
 
   @Override
@@ -57,12 +60,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptFeature;
       case LanguageConceptSwitch.Form:
         return myConceptForm;
+      case LanguageConceptSwitch.Individual:
+        return myConceptIndividual;
       case LanguageConceptSwitch.Page:
         return myConceptPage;
       case LanguageConceptSwitch.Reference:
         return myConceptReference;
       case LanguageConceptSwitch.System:
         return myConceptSystem;
+      case LanguageConceptSwitch.content:
+        return myConceptcontent;
+      case LanguageConceptSwitch.dynamic_content:
+        return myConceptdynamic_content;
       default:
         return null;
     }
@@ -105,7 +114,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/2235370616159566886");
     b.version(3);
-    b.aggregate("ffeatures", 0x1f05a1bb5d897c2eL).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c2bL).optional(false).ordered(true).multiple(true).origin("2235370616159566894").done();
+    b.aggregate("features", 0x1f05a1bb5d897c2eL).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c2bL).optional(false).ordered(true).multiple(true).origin("2235370616159566894").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFeature() {
@@ -127,12 +136,25 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("elements", 0x34b196dfcc949dd3L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x34b196dfcc949dc3L).optional(true).ordered(true).multiple(true).origin("3796981848804203987").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForIndividual() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Glot", "Individual", 0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee7ca3L);
+    b.class_(false, false, false);
+    // extends: Glot.structure.dynamic_content
+    b.super_(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee660eL);
+    b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/7837849424174677155");
+    b.version(3);
+    b.property("row", 0x6cc5a2864aee88c0L).type(PrimitiveTypeId.INTEGER).origin("7837849424174680256").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForPage() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Glot", "Page", 0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x34b196dfcc93680fL);
     b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/3796981848804124687");
     b.version(3);
+    b.property("URL", 0x6cc5a2864aee51e3L).type(MetaIdFactory.dataTypeId(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c33L)).origin("7837849424174666211").done();
+    b.associate("page_ref_page", 0x6cc5a2864aee5717L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x34b196dfcc93680fL).optional(true).origin("7837849424174667543").done();
+    b.aggregate("cont", 0x6cc5a2864aee84e0L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee634dL).optional(true).ordered(true).multiple(false).origin("7837849424174679264").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForReference() {
@@ -156,6 +178,23 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("entities", 0x1f05a1bb5d897c29L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c26L).optional(true).ordered(true).multiple(true).origin("2235370616159566889").done();
     b.aggregate("pages", 0x34b196dfcc9367c6L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x34b196dfcc93680fL).optional(true).ordered(true).multiple(true).origin("3796981848804124614").done();
     b.aggregate("forms", 0x34b196dfcc956e85L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x34b196dfcc949dc0L).optional(true).ordered(true).multiple(true).origin("3796981848804257413").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForcontent() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Glot", "content", 0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee634dL);
+    b.class_(false, true, false);
+    b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/7837849424174670669");
+    b.version(3);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorFordynamic_content() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Glot", "dynamic_content", 0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee660eL);
+    b.class_(false, true, false);
+    // extends: Glot.structure.content
+    b.super_(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee634dL);
+    b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/7837849424174671374");
+    b.version(3);
+    b.associate("dynamic_content_ref_Entitity", 0x6cc5a2864aee73feL).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c26L).optional(true).origin("7837849424174674942").done();
     return b.create();
   }
 }

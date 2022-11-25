@@ -88,7 +88,7 @@
       <node id="2235370616159881839" at="58,0,59,0" concept="7" trace="Feature$rw" />
       <node id="2235370616159881839" at="59,0,60,0" concept="7" trace="Entity$eU" />
       <node id="2235370616159881839" at="63,0,64,0" concept="7" trace="name$MnvL" />
-      <node id="2235370616159881839" at="67,0,68,0" concept="7" trace="ffeatures$U1Wq" />
+      <node id="2235370616159881839" at="67,0,68,0" concept="7" trace="features$U1Wq" />
       <node id="2235370616159881839" at="26,0,29,0" concept="0" trace="Feature_Constraints#()V" />
       <node id="2235370616159881840" at="31,0,34,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
       <node id="2235370616159881840" at="36,99,39,7" concept="2" />
@@ -127,7 +127,7 @@
       </scope>
       <unit id="2235370616159881839" at="62,0,65,0" name="Glot.constraints.Feature_Constraints$PROPS" />
       <unit id="2235370616159881839" at="66,0,69,0" name="Glot.constraints.Feature_Constraints$LINKS" />
-      <unit id="2235370616159909031" at="43,171,47,7" name="Glot.constraints.Feature_Constraints$Name_Property$1" />
+      <unit id="2235370616159909031" at="43,170,47,7" name="Glot.constraints.Feature_Constraints$Name_Property$1" />
       <unit id="2235370616159881839" at="57,0,61,0" name="Glot.constraints.Feature_Constraints$CONCEPTS" />
       <unit id="2235370616159881840" at="30,0,50,0" name="Glot.constraints.Feature_Constraints$Name_Property" />
       <unit id="2235370616159881839" at="25,0,70,0" name="Glot.constraints.Feature_Constraints" />

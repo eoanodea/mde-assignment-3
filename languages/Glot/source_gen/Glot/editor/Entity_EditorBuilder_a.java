@@ -126,9 +126,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new ffeaturesListHandler_n4nctg_a3a(myNode, getEditorContext());
+    AbstractCellListHandler handler = new featuresListHandler_n4nctg_a3a(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_ffeatures");
+    editorCell.setCellId("refNodeList_features");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
@@ -137,11 +137,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class ffeaturesListHandler_n4nctg_a3a extends RefNodeListHandler {
+  private static class featuresListHandler_n4nctg_a3a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public ffeaturesListHandler_n4nctg_a3a(SNode ownerNode, EditorContext context) {
+    public featuresListHandler_n4nctg_a3a(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -151,7 +151,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.ffeatures$U1Wq;
+      return LINKS.features$U1Wq;
     }
     public SAbstractConcept getChildSConcept() {
       return CONCEPTS.Feature$rw;
@@ -164,7 +164,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(ffeaturesListHandler_n4nctg_a3a.this.getNode(), LINKS.ffeatures$U1Wq));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(featuresListHandler_n4nctg_a3a.this.getNode(), LINKS.features$U1Wq));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -224,6 +224,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink ffeatures$U1Wq = MetaAdapterFactory.getContainmentLink(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c26L, 0x1f05a1bb5d897c2eL, "ffeatures");
+    /*package*/ static final SContainmentLink features$U1Wq = MetaAdapterFactory.getContainmentLink(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c26L, 0x1f05a1bb5d897c2eL, "features");
   }
 }

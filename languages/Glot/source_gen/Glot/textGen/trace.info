@@ -86,8 +86,8 @@
       <node id="7785237472610681744" at="21,86,22,21" concept="3" />
       <node id="7785237472610681879" at="22,21,23,18" concept="3" />
       <node id="7785237472611175582" at="23,18,24,25" concept="3" />
-      <node id="7785237472611515603" at="25,5,26,108" concept="7" />
-      <node id="7785237472611515603" at="26,108,27,70" concept="7" />
+      <node id="7785237472611515603" at="25,5,26,107" concept="7" />
+      <node id="7785237472611515603" at="26,107,27,70" concept="7" />
       <node id="7785237472611515603" at="28,37,29,29" concept="3" />
       <node id="7785237472611515603" at="30,31,31,28" concept="3" />
       <node id="7785237472611587509" at="34,5,35,18" concept="3" />
@@ -96,7 +96,7 @@
       <node id="7785237472610802410" at="37,20,38,18" concept="3" />
       <node id="7785237472610802650" at="38,18,39,18" concept="3" />
       <node id="7785237472610680112" at="43,0,44,0" concept="10" trace="name$MnvL" />
-      <node id="7785237472610680112" at="47,0,48,0" concept="10" trace="ffeatures$U1Wq" />
+      <node id="7785237472610680112" at="47,0,48,0" concept="10" trace="features$U1Wq" />
       <node id="7785237472611515603" at="29,29,32,9" concept="5" />
       <node id="7785237472611515603" at="27,70,33,7" concept="4" />
       <node id="7785237472611515603" at="24,25,34,5" concept="0" />
@@ -182,7 +182,7 @@
       <node id="7785237472611993149" at="37,0,38,0" concept="10" trace="isPrimaryKey$8T7e" />
       <node id="7785237472611993149" at="38,0,39,0" concept="10" trace="type$U2Su" />
       <node id="7785237472611993149" at="42,0,43,0" concept="10" trace="foreignKey$WIPu" />
-      <node id="7785237472611993149" at="43,0,44,0" concept="10" trace="ffeatures$U1Wq" />
+      <node id="7785237472611993149" at="43,0,44,0" concept="10" trace="features$U1Wq" />
       <node id="7785237472611993149" at="47,0,48,0" concept="10" trace="Attribute$tV" />
       <node id="7785237472612145232" at="28,0,31,0" concept="6" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="7785237472612118912" at="26,20,31,59" concept="3" />
@@ -198,7 +198,7 @@
         <var name="ctx" id="7785237472611993149" />
       </scope>
       <unit id="7785237472611993149" at="46,0,49,0" name="Glot.textGen.Reference_TextGen$CONCEPTS" />
-      <unit id="7785237472612145232" at="27,251,31,5" name="Glot.textGen.Reference_TextGen$1" />
+      <unit id="7785237472612145232" at="27,250,31,5" name="Glot.textGen.Reference_TextGen$1" />
       <unit id="7785237472611993149" at="41,0,45,0" name="Glot.textGen.Reference_TextGen$LINKS" />
       <unit id="7785237472611993149" at="35,0,40,0" name="Glot.textGen.Reference_TextGen$PROPS" />
       <unit id="7785237472611993149" at="21,0,50,0" name="Glot.textGen.Reference_TextGen" />

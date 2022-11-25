@@ -24,7 +24,7 @@ public class Reference_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$MnvL));
     tgs.append(" ");
-    tgs.append(SEnumOperations.getMemberName0(SPropertyOperations.getEnum(SNodeOperations.cast(ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.foreignKey$WIPu), LINKS.ffeatures$U1Wq)).where(new IWhereFilter<SNode>() {
+    tgs.append(SEnumOperations.getMemberName0(SPropertyOperations.getEnum(SNodeOperations.cast(ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.foreignKey$WIPu), LINKS.features$U1Wq)).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return SNodeOperations.isInstanceOf(it, CONCEPTS.Attribute$tV) && SPropertyOperations.getBoolean(SNodeOperations.cast(it, CONCEPTS.Attribute$tV), PROPS.isPrimaryKey$8T7e);
       }
@@ -40,7 +40,7 @@ public class Reference_TextGen extends TextGenDescriptorBase {
 
   private static final class LINKS {
     /*package*/ static final SReferenceLink foreignKey$WIPu = MetaAdapterFactory.getReferenceLink(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c41L, 0x1f05a1bb5d897c42L, "foreignKey");
-    /*package*/ static final SContainmentLink ffeatures$U1Wq = MetaAdapterFactory.getContainmentLink(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c26L, 0x1f05a1bb5d897c2eL, "ffeatures");
+    /*package*/ static final SContainmentLink features$U1Wq = MetaAdapterFactory.getContainmentLink(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c26L, 0x1f05a1bb5d897c2eL, "features");
   }
 
   private static final class CONCEPTS {

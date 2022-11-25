@@ -118,7 +118,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     }
 
     protected void handleAction(SNode node, SModel model, EditorContext editorContext) {
-      ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.Entity$eU), LINKS.ffeatures$U1Wq)).where(new IWhereFilter<SNode>() {
+      ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.Entity$eU), LINKS.features$U1Wq)).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
           return SNodeOperations.isInstanceOf(it, CONCEPTS.Attribute$tV);
         }
@@ -232,6 +232,6 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink ffeatures$U1Wq = MetaAdapterFactory.getContainmentLink(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c26L, 0x1f05a1bb5d897c2eL, "ffeatures");
+    /*package*/ static final SContainmentLink features$U1Wq = MetaAdapterFactory.getContainmentLink(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c26L, 0x1f05a1bb5d897c2eL, "features");
   }
 }

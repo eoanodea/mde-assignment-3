@@ -23,7 +23,7 @@ public class Entity_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.increaseIndent();
     {
-      Iterable<SNode> collection = SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.ffeatures$U1Wq);
+      Iterable<SNode> collection = SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.features$U1Wq);
       final SNode lastItem = Sequence.fromIterable(collection).last();
       for (SNode item : collection) {
         tgs.appendNode(item);
@@ -44,6 +44,6 @@ public class Entity_TextGen extends TextGenDescriptorBase {
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink ffeatures$U1Wq = MetaAdapterFactory.getContainmentLink(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c26L, 0x1f05a1bb5d897c2eL, "ffeatures");
+    /*package*/ static final SContainmentLink features$U1Wq = MetaAdapterFactory.getContainmentLink(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c26L, 0x1f05a1bb5d897c2eL, "features");
   }
 }
