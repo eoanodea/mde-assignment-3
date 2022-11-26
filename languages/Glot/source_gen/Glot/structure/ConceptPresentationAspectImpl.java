@@ -78,6 +78,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Individual:
         if (props_Individual == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("this is the Individual");
           cpb.presentationByName();
           props_Individual = cpb.create();
         }

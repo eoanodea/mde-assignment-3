@@ -24,4 +24,4 @@ CREATE TABLE brand (
 )
 
 hello
-  index1    ind1   ind2 
+  index1
