@@ -24,6 +24,4 @@ CREATE TABLE brand (
 )
 
 Home
-<!TextGen not found for 'Glot.structure.Index'!>, 
-<!TextGen not found for 'Glot.structure.Individual'!>, 
-<!TextGen not found for 'Glot.structure.Individual'!>
+  con 
