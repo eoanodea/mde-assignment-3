@@ -27,3 +27,7 @@ SELECT * (
     FROM brand
     WHERE id= 1 OR id= 99
 )
+SELECT * (
+        FROM category
+        WHERE id= 2
+)

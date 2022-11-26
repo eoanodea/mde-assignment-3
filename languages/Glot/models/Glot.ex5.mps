@@ -36,6 +36,7 @@
       </concept>
       <concept id="3796981848804124687" name="Glot.structure.Page" flags="ng" index="3S8JVg">
         <property id="7837849424174666211" name="URL" index="AaZd_" />
+        <reference id="7837849424174667543" name="page_ref_page" index="AaZmh" />
         <child id="7837849424174679264" name="content" index="AaMpA" />
       </concept>
       <concept id="3796981848804203971" name="Glot.structure.Element" flags="ng" index="3S9gGs">
@@ -160,6 +161,16 @@
           <property role="1g8QTC" value="99" />
           <ref role="1geqf$" node="3AgXDBUscn6" resolve="brand" />
         </node>
+      </node>
+    </node>
+    <node concept="3S8JVg" id="60SjN5w_Qw9" role="3S8J4p">
+      <property role="TrG5h" value="AboutPage" />
+      <property role="AaZd_" value="about.com" />
+      <ref role="AaZmh" node="7HMP_cFut9f" resolve="Amazon" />
+      <node concept="AaXS_" id="60SjN5w_Qwf" role="AaMpA">
+        <property role="TrG5h" value="individual" />
+        <property role="1g8QTC" value="2" />
+        <ref role="1geqf$" node="3AgXDBUrUxC" resolve="category" />
       </node>
     </node>
   </node>

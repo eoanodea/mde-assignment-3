@@ -23,5 +23,11 @@ CREATE TABLE brand (
   url VARCHAR(255)
 )
 
-hello
-  index1
+SELECT * (
+    FROM brand
+    WHERE id= 1 OR id= 99
+)
+SELECT * (
+        FROM category
+        WHERE id= 2
+)
