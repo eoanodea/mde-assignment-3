@@ -218,29 +218,23 @@
   </root>
   <root nodeRef="r:93b60dd2-8729-4eae-9b0d-5f7b7d56e644(Glot.textGen)/7837849424177027033">
     <file name="Page_TextGen.java">
-      <node id="7837849424177027033" at="17,54,18,55" concept="7" />
-      <node id="7837849424177030740" at="18,55,19,86" concept="3" />
-      <node id="7837849424177033405" at="19,86,20,18" concept="3" />
-      <node id="7837849424177034491" at="20,18,21,25" concept="3" />
-      <node id="8895407866707022174" at="22,95,23,27" concept="3" />
-      <node id="7837849424177044852" at="24,5,25,18" concept="3" />
-      <node id="7837849424177027033" at="29,0,30,0" concept="10" trace="name$MnvL" />
-      <node id="7837849424177027033" at="33,0,34,0" concept="10" trace="content$9QTi" />
-      <node id="8895407866707022174" at="21,25,24,5" concept="4" />
-      <node id="7837849424177027033" at="16,0,27,0" concept="6" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="8895407866707022174" at="22,95,23,27" />
-      <scope id="8895407866707022174" at="21,25,24,5">
-        <var name="item" id="8895407866707022174" />
-      </scope>
-      <scope id="7837849424177027033" at="17,54,25,18">
+      <node id="7837849424177027033" at="16,54,17,55" concept="7" />
+      <node id="7837849424177030740" at="17,55,18,86" concept="3" />
+      <node id="7837849424177033405" at="18,86,19,18" concept="3" />
+      <node id="7837849424177034491" at="19,18,20,25" concept="3" />
+      <node id="6933378699827442670" at="20,25,21,89" concept="3" />
+      <node id="7837849424177027033" at="25,0,26,0" concept="10" trace="name$MnvL" />
+      <node id="7837849424177027033" at="29,0,30,0" concept="10" trace="content$9QTi" />
+      <node id="7837849424177027033" at="15,0,23,0" concept="6" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="7837849424177027033" at="16,54,21,89">
         <var name="tgs" id="7837849424177027033" />
       </scope>
-      <scope id="7837849424177027033" at="16,0,27,0">
+      <scope id="7837849424177027033" at="15,0,23,0">
         <var name="ctx" id="7837849424177027033" />
       </scope>
-      <unit id="7837849424177027033" at="28,0,31,0" name="Glot.textGen.Page_TextGen$PROPS" />
-      <unit id="7837849424177027033" at="32,0,35,0" name="Glot.textGen.Page_TextGen$LINKS" />
-      <unit id="7837849424177027033" at="15,0,36,0" name="Glot.textGen.Page_TextGen" />
+      <unit id="7837849424177027033" at="24,0,27,0" name="Glot.textGen.Page_TextGen$PROPS" />
+      <unit id="7837849424177027033" at="28,0,31,0" name="Glot.textGen.Page_TextGen$LINKS" />
+      <unit id="7837849424177027033" at="14,0,32,0" name="Glot.textGen.Page_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
       <node id="7837849424177027033" at="34,38,35,34" concept="8" />

@@ -8,7 +8,13 @@
   <imports />
   <registry>
     <language id="28e4957b-8599-4380-9a2d-e36d611c13b9" name="Glot">
-      <concept id="7837849424174677155" name="Glot.structure.Individual" flags="ng" index="AaXS_" />
+      <concept id="7837849424174671374" name="Glot.structure.dynamic_content" flags="ng" index="AaWi8">
+        <reference id="8895407866707146167" name="entity" index="1geqf$" />
+      </concept>
+      <concept id="7837849424174677155" name="Glot.structure.Individual" flags="ng" index="AaXS_">
+        <property id="8895407866707556411" name="id" index="1g8QTC" />
+        <reference id="8895407866707061832" name="attr" index="1gefCr" />
+      </concept>
       <concept id="7837849424175293994" name="Glot.structure.Index" flags="ng" index="Ac$iG">
         <child id="8895407866707060502" name="individuals" index="1gef55" />
       </concept>
@@ -30,6 +36,8 @@
         <reference id="2235370616159566914" name="foreignKey" index="12zdRT" />
       </concept>
       <concept id="3796981848804124687" name="Glot.structure.Page" flags="ng" index="3S8JVg">
+        <property id="7837849424174666211" name="URL" index="AaZd_" />
+        <reference id="7837849424174667543" name="page_ref_page" index="AaZmh" />
         <child id="7837849424174679264" name="content" index="AaMpA" />
       </concept>
       <concept id="3796981848804203971" name="Glot.structure.Element" flags="ng" index="3S9gGs">
@@ -139,10 +147,28 @@
       </node>
     </node>
     <node concept="3S8JVg" id="7HMP_cFjxAC" role="3S8J4p">
+      <property role="TrG5h" value="Home" />
+      <property role="AaZd_" value="string" />
+      <ref role="AaZmh" node="7HMP_cFjxAC" resolve="Home" />
       <node concept="Ac$iG" id="7HMP_cFk855" role="AaMpA">
+        <property role="TrG5h" value="index1" />
+        <ref role="1geqf$" node="3AgXDBUscn6" resolve="brand" />
         <node concept="AaXS_" id="7HMP_cFk857" role="1gef55">
-          <property role="TrG5h" value="ind1" />
+          <property role="TrG5h" value="individual1" />
+          <property role="1g8QTC" value="0" />
+          <ref role="1gefCr" node="3AgXDBUoIu0" resolve="description" />
+          <ref role="1geqf$" node="3AgXDBUscn6" resolve="brand" />
         </node>
+      </node>
+    </node>
+    <node concept="3S8JVg" id="60SjN5wvU4$" role="3S8J4p">
+      <property role="TrG5h" value="About" />
+      <property role="AaZd_" value="string" />
+      <node concept="AaXS_" id="60SjN5wvU4D" role="AaMpA">
+        <property role="TrG5h" value="test" />
+        <property role="1g8QTC" value="2" />
+        <ref role="1geqf$" node="3AgXDBUscn6" resolve="brand" />
+        <ref role="1gefCr" node="3AgXDBUoIu0" resolve="description" />
       </node>
     </node>
   </node>
