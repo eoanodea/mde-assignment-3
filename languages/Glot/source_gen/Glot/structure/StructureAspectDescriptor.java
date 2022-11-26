@@ -17,7 +17,6 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAttribute = createDescriptorForAttribute();
-  /*package*/ final ConceptDescriptor myConceptConceptHub = createDescriptorForConceptHub();
   /*package*/ final ConceptDescriptor myConceptContent = createDescriptorForContent();
   /*package*/ final ConceptDescriptor myConceptElement = createDescriptorForElement();
   /*package*/ final ConceptDescriptor myConceptEntity = createDescriptorForEntity();
@@ -45,7 +44,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAttribute, myConceptConceptHub, myConceptContent, myConceptElement, myConceptEntity, myConceptFeature, myConceptForm, myConceptIndex, myConceptIndividual, myConceptPage, myConceptReference, myConceptSystem, myConceptdynamic_content);
+    return Arrays.asList(myConceptAttribute, myConceptContent, myConceptElement, myConceptEntity, myConceptFeature, myConceptForm, myConceptIndex, myConceptIndividual, myConceptPage, myConceptReference, myConceptSystem, myConceptdynamic_content);
   }
 
   @Override
@@ -54,8 +53,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.Attribute:
         return myConceptAttribute;
-      case LanguageConceptSwitch.ConceptHub:
-        return myConceptConceptHub;
       case LanguageConceptSwitch.Content:
         return myConceptContent;
       case LanguageConceptSwitch.Element:
@@ -101,14 +98,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.property("type", 0x1f05a1bb5d897c31L).type(MetaIdFactory.dataTypeId(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c33L)).origin("2235370616159566897").done();
     b.property("isPrimaryKey", 0x6c21e3da475f0862L).type(PrimitiveTypeId.BOOLEAN).origin("7791759356967454818").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForConceptHub() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Glot", "ConceptHub", 0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864b025bb6L);
-    b.class_(false, false, false);
-    b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/7837849424175979446");
-    b.version(3);
-    b.associate("individual", 0x6cc5a2864b025d23L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee7ca3L).optional(false).origin("7837849424175979811").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForContent() {
@@ -165,8 +154,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee660eL);
     b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/7837849424175293994");
     b.version(3);
-    b.property("index_id", 0x6cc5a2864af7e985L).type(PrimitiveTypeId.INTEGER).origin("7837849424175294853").done();
-    b.aggregate("individuals", 0x6cc5a2864b026593L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864b025bb6L).optional(true).ordered(true).multiple(true).origin("7837849424175981971").done();
+    b.aggregate("individuals", 0x7b72d6532b4a2716L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee7ca3L).optional(true).ordered(true).multiple(true).origin("8895407866707060502").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIndividual() {
@@ -176,7 +164,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee660eL);
     b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/7837849424174677155");
     b.version(3);
-    b.property("row", 0x6cc5a2864aee88c0L).type(PrimitiveTypeId.INTEGER).origin("7837849424174680256").done();
+    b.associate("attr", 0x7b72d6532b4a2c48L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c30L).optional(true).origin("8895407866707061832").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPage() {
@@ -187,7 +175,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.property("URL", 0x6cc5a2864aee51e3L).type(PrimitiveTypeId.STRING).origin("7837849424174666211").done();
     b.associate("page_ref_page", 0x6cc5a2864aee5717L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x34b196dfcc93680fL).optional(true).origin("7837849424174667543").done();
-    b.aggregate("content", 0x6cc5a2864aee84e0L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee634dL).optional(true).ordered(true).multiple(true).origin("7837849424174679264").done();
+    b.aggregate("content", 0x6cc5a2864aee84e0L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee634dL).optional(true).ordered(true).multiple(false).origin("7837849424174679264").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForReference() {
@@ -220,8 +208,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x6cc5a2864aee634dL);
     b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/7837849424174671374");
     b.version(3);
-    b.associate("dynamic_content_ref_Entitity", 0x6cc5a2864aee73feL).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c26L).optional(true).origin("7837849424174674942").done();
-    b.associate("dynamic_content_ref_attr", 0x6cc5a2864b15aeb0L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c30L).optional(true).origin("7837849424177245872").done();
+    b.associate("entity", 0x7b72d6532b4b75b7L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c26L).optional(true).origin("8895407866707146167").done();
     return b.create();
   }
 }

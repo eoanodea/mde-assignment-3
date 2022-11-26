@@ -23,5 +23,5 @@ CREATE TABLE brand (
   url VARCHAR(255)
 )
 
-Home
-  con 
+
+  

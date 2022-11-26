@@ -8,11 +8,9 @@
   <imports />
   <registry>
     <language id="28e4957b-8599-4380-9a2d-e36d611c13b9" name="Glot">
-      <concept id="7837849424174671374" name="Glot.structure.dynamic_content" flags="ng" index="AaWi8">
-        <reference id="7837849424174674942" name="dynamic_content_ref_Entitity" index="AaX5S" />
-      </concept>
-      <concept id="7837849424174677155" name="Glot.structure.Individual" flags="ng" index="AaXS_">
-        <property id="7837849424174680256" name="row" index="AaMD6" />
+      <concept id="7837849424174677155" name="Glot.structure.Individual" flags="ng" index="AaXS_" />
+      <concept id="7837849424175293994" name="Glot.structure.Index" flags="ng" index="Ac$iG">
+        <child id="8895407866707060502" name="individuals" index="1gef55" />
       </concept>
       <concept id="2235370616159566896" name="Glot.structure.Attribute" flags="ng" index="12zdQb">
         <property id="7791759356967454818" name="isPrimaryKey" index="FvIIS" />
@@ -32,8 +30,6 @@
         <reference id="2235370616159566914" name="foreignKey" index="12zdRT" />
       </concept>
       <concept id="3796981848804124687" name="Glot.structure.Page" flags="ng" index="3S8JVg">
-        <property id="7837849424174666211" name="URL" index="AaZd_" />
-        <reference id="7837849424174667543" name="page_ref_page" index="AaZmh" />
         <child id="7837849424174679264" name="content" index="AaMpA" />
       </concept>
       <concept id="3796981848804203971" name="Glot.structure.Element" flags="ng" index="3S9gGs">
@@ -119,21 +115,6 @@
         <property role="TrG5h" value="url" />
       </node>
     </node>
-    <node concept="3S8JVg" id="6UVzr4Fecpd" role="3S8J4p">
-      <property role="TrG5h" value="Home" />
-      <property role="AaZd_" value="website.com" />
-      <ref role="AaZmh" node="6UVzr4Fecpd" resolve="Home" />
-      <node concept="AaXS_" id="6UVzr4Fecpq" role="AaMpA">
-        <property role="TrG5h" value="con" />
-        <property role="AaMD6" value="34" />
-        <ref role="AaX5S" node="3AgXDBUrUxC" resolve="category" />
-      </node>
-      <node concept="AaXS_" id="7HMP_cFibNz" role="AaMpA">
-        <property role="TrG5h" value="lol" />
-        <property role="AaMD6" value="34" />
-        <ref role="AaX5S" node="3AgXDBUrUxC" resolve="category" />
-      </node>
-    </node>
     <node concept="3S9gGv" id="6UVzr4FkemX" role="3S9fxq">
       <property role="TrG5h" value="Category" />
       <property role="3S9gzZ" value="3iL_HZc_9Ss/POST" />
@@ -155,6 +136,13 @@
         <property role="3S9gGp" value="Image" />
         <property role="3S9gGn" value="Select an image" />
         <ref role="3S9gGe" node="3AgXDBUrUy9" resolve="image" />
+      </node>
+    </node>
+    <node concept="3S8JVg" id="7HMP_cFjxAC" role="3S8J4p">
+      <node concept="Ac$iG" id="7HMP_cFk855" role="AaMpA">
+        <node concept="AaXS_" id="7HMP_cFk857" role="1gef55">
+          <property role="TrG5h" value="ind1" />
+        </node>
       </node>
     </node>
   </node>

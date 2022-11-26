@@ -10,23 +10,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int Attribute = 0;
-  public static final int ConceptHub = 1;
-  public static final int Content = 2;
-  public static final int Element = 3;
-  public static final int Entity = 4;
-  public static final int Feature = 5;
-  public static final int Form = 6;
-  public static final int Index = 7;
-  public static final int Individual = 8;
-  public static final int Page = 9;
-  public static final int Reference = 10;
-  public static final int System = 11;
-  public static final int dynamic_content = 12;
+  public static final int Content = 1;
+  public static final int Element = 2;
+  public static final int Entity = 3;
+  public static final int Feature = 4;
+  public static final int Form = 5;
+  public static final int Index = 6;
+  public static final int Individual = 7;
+  public static final int Page = 8;
+  public static final int Reference = 9;
+  public static final int System = 10;
+  public static final int dynamic_content = 11;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x28e4957b85994380L, 0x9a2de36d611c13b9L);
     builder.put(0x1f05a1bb5d897c30L, Attribute);
-    builder.put(0x6cc5a2864b025bb6L, ConceptHub);
     builder.put(0x6cc5a2864aee634dL, Content);
     builder.put(0x34b196dfcc949dc3L, Element);
     builder.put(0x1f05a1bb5d897c26L, Entity);
