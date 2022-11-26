@@ -287,11 +287,6 @@
     <property role="3GE5qa" value="Content Concern" />
     <property role="TrG5h" value="Individual" />
     <ref role="1TJDcQ" node="6N5CCpaVAoe" resolve="dynamic_content" />
-    <node concept="1TJgyj" id="7HMP_cFiyL8" role="1TKVEi">
-      <property role="IQ2ns" value="8895407866707061832" />
-      <property role="20kJfa" value="attr" />
-      <ref role="20lvS9" node="1W5CrHtynKK" resolve="Attribute" />
-    </node>
     <node concept="1TJgyi" id="7HMP_cFkrwV" role="1TKVEl">
       <property role="IQ2nx" value="8895407866707556411" />
       <property role="TrG5h" value="id" />
