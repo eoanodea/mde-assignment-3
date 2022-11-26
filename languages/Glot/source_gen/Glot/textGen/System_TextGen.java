@@ -28,6 +28,10 @@ public class System_TextGen extends TextGenDescriptorBase {
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.entities$TVOz)) {
       tgs.appendNode(item);
     }
+    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.pages$7NPi)) {
+      tgs.appendNode(item);
+    }
+
   }
 
   private static final class PROPS {
@@ -38,5 +42,6 @@ public class System_TextGen extends TextGenDescriptorBase {
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink entities$TVOz = MetaAdapterFactory.getContainmentLink(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c23L, 0x1f05a1bb5d897c29L, "entities");
+    /*package*/ static final SContainmentLink pages$7NPi = MetaAdapterFactory.getContainmentLink(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c23L, 0x34b196dfcc9367c6L, "pages");
   }
 }

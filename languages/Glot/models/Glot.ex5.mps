@@ -14,13 +14,6 @@
       <concept id="7837849424174677155" name="Glot.structure.Individual" flags="ng" index="AaXS_">
         <property id="7837849424174680256" name="row" index="AaMD6" />
       </concept>
-      <concept id="7837849424175293994" name="Glot.structure.Index" flags="ng" index="Ac$iG">
-        <property id="7837849424175294853" name="index_id" index="Ac$G3" />
-        <child id="7837849424175981971" name="individuals" index="BLWsl" />
-      </concept>
-      <concept id="7837849424175979446" name="Glot.structure.ConceptHub" flags="ng" index="BLZ$K">
-        <reference id="7837849424175979811" name="individual" index="BLZY_" />
-      </concept>
       <concept id="2235370616159566896" name="Glot.structure.Attribute" flags="ng" index="12zdQb">
         <property id="7791759356967454818" name="isPrimaryKey" index="FvIIS" />
         <property id="2235370616159566897" name="type" index="12zdQa" />
@@ -130,25 +123,14 @@
       <property role="TrG5h" value="Home" />
       <property role="AaZd_" value="website.com" />
       <ref role="AaZmh" node="6UVzr4Fecpd" resolve="Home" />
-      <node concept="Ac$iG" id="6UVzr4Fecpf" role="AaMpA">
-        <property role="Ac$G3" value="1" />
-        <property role="TrG5h" value="brand" />
-        <ref role="AaX5S" node="3AgXDBUscn6" resolve="brand" />
-        <node concept="BLZ$K" id="6UVzr4FqJ00" role="BLWsl">
-          <ref role="BLZY_" node="6UVzr4Fecpq" resolve="concept" />
-        </node>
-      </node>
-      <node concept="Ac$iG" id="6UVzr4FqJ0f" role="AaMpA">
-        <property role="TrG5h" value="brand" />
-        <property role="Ac$G3" value="2" />
-        <ref role="AaX5S" node="3AgXDBUrUxC" resolve="category" />
-        <node concept="BLZ$K" id="6UVzr4FqJ0l" role="BLWsl">
-          <ref role="BLZY_" node="6UVzr4Fecpq" resolve="concept" />
-        </node>
-      </node>
       <node concept="AaXS_" id="6UVzr4Fecpq" role="AaMpA">
-        <property role="TrG5h" value="concept" />
-        <property role="AaMD6" value="2" />
+        <property role="TrG5h" value="con" />
+        <property role="AaMD6" value="34" />
+        <ref role="AaX5S" node="3AgXDBUrUxC" resolve="category" />
+      </node>
+      <node concept="AaXS_" id="7HMP_cFibNz" role="AaMpA">
+        <property role="TrG5h" value="lol" />
+        <property role="AaMD6" value="34" />
         <ref role="AaX5S" node="3AgXDBUrUxC" resolve="category" />
       </node>
     </node>
