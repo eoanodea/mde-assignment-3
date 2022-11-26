@@ -36,8 +36,6 @@
         <reference id="2235370616159566914" name="foreignKey" index="12zdRT" />
       </concept>
       <concept id="3796981848804124687" name="Glot.structure.Page" flags="ng" index="3S8JVg">
-        <property id="7837849424174666211" name="URL" index="AaZd_" />
-        <reference id="7837849424174667543" name="page_ref_page" index="AaZmh" />
         <child id="7837849424174679264" name="content" index="AaMpA" />
       </concept>
       <concept id="3796981848804203971" name="Glot.structure.Element" flags="ng" index="3S9gGs">
@@ -147,28 +145,20 @@
       </node>
     </node>
     <node concept="3S8JVg" id="7HMP_cFjxAC" role="3S8J4p">
-      <property role="TrG5h" value="Home" />
-      <property role="AaZd_" value="string" />
-      <ref role="AaZmh" node="7HMP_cFjxAC" resolve="Home" />
+      <property role="TrG5h" value="hello" />
       <node concept="Ac$iG" id="7HMP_cFk855" role="AaMpA">
         <property role="TrG5h" value="index1" />
         <ref role="1geqf$" node="3AgXDBUscn6" resolve="brand" />
         <node concept="AaXS_" id="7HMP_cFk857" role="1gef55">
-          <property role="TrG5h" value="individual1" />
-          <property role="1g8QTC" value="0" />
-          <ref role="1gefCr" node="3AgXDBUoIu0" resolve="description" />
-          <ref role="1geqf$" node="3AgXDBUscn6" resolve="brand" />
+          <property role="TrG5h" value="ind1" />
+          <property role="1g8QTC" value="1" />
+          <ref role="1gefCr" node="3AgXDBUoItN" resolve="id" />
         </node>
-      </node>
-    </node>
-    <node concept="3S8JVg" id="60SjN5wvU4$" role="3S8J4p">
-      <property role="TrG5h" value="About" />
-      <property role="AaZd_" value="string" />
-      <node concept="AaXS_" id="60SjN5wvU4D" role="AaMpA">
-        <property role="TrG5h" value="test" />
-        <property role="1g8QTC" value="2" />
-        <ref role="1geqf$" node="3AgXDBUscn6" resolve="brand" />
-        <ref role="1gefCr" node="3AgXDBUoIu0" resolve="description" />
+        <node concept="AaXS_" id="7HMP_cFlrDC" role="1gef55">
+          <property role="TrG5h" value="ind2" />
+          <property role="1g8QTC" value="2" />
+          <ref role="1gefCr" node="3AgXDBUoIu0" resolve="description" />
+        </node>
       </node>
     </node>
   </node>

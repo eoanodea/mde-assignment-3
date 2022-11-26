@@ -23,6 +23,5 @@ CREATE TABLE brand (
   url VARCHAR(255)
 )
 
-Home
-  index1About
-    test 
+hello
+  index1    ind1   ind2 
