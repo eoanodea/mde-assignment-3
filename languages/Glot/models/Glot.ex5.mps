@@ -13,7 +13,6 @@
       </concept>
       <concept id="7837849424174677155" name="Glot.structure.Individual" flags="ng" index="AaXS_">
         <property id="8895407866707556411" name="id" index="1g8QTC" />
-        <reference id="8895407866707061832" name="attr" index="1gefCr" />
       </concept>
       <concept id="7837849424175293994" name="Glot.structure.Index" flags="ng" index="Ac$iG">
         <child id="8895407866707060502" name="individuals" index="1gef55" />
@@ -149,15 +148,15 @@
       <node concept="Ac$iG" id="7HMP_cFk855" role="AaMpA">
         <property role="TrG5h" value="index1" />
         <ref role="1geqf$" node="3AgXDBUscn6" resolve="brand" />
-        <node concept="AaXS_" id="7HMP_cFk857" role="1gef55">
-          <property role="TrG5h" value="ind1" />
+        <node concept="AaXS_" id="60SjN5wxGAT" role="1gef55">
+          <property role="TrG5h" value="individual1" />
           <property role="1g8QTC" value="1" />
-          <ref role="1gefCr" node="3AgXDBUoItN" resolve="id" />
+          <ref role="1geqf$" node="3AgXDBUscn6" resolve="brand" />
         </node>
-        <node concept="AaXS_" id="7HMP_cFlrDC" role="1gef55">
-          <property role="TrG5h" value="ind2" />
+        <node concept="AaXS_" id="60SjN5wxGAV" role="1gef55">
+          <property role="TrG5h" value="individual2" />
           <property role="1g8QTC" value="2" />
-          <ref role="1gefCr" node="3AgXDBUoIu0" resolve="description" />
+          <ref role="1geqf$" node="3AgXDBUrUxC" resolve="category" />
         </node>
       </node>
     </node>

@@ -24,5 +24,4 @@ CREATE TABLE brand (
 )
 
 hello
-SELECT * (
-    FROM brand    WHERE id= index1
+  index1
