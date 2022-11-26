@@ -148,15 +148,15 @@
       <node concept="Ac$iG" id="7HMP_cFk855" role="AaMpA">
         <property role="TrG5h" value="index1" />
         <ref role="1geqf$" node="3AgXDBUscn6" resolve="brand" />
-        <node concept="AaXS_" id="60SjN5wxGAT" role="1gef55">
-          <property role="TrG5h" value="individual1" />
-          <property role="1g8QTC" value="1" />
+        <node concept="AaXS_" id="7HMP_cFqy88" role="1gef55">
+          <property role="TrG5h" value="indiv1" />
+          <property role="1g8QTC" value="234" />
           <ref role="1geqf$" node="3AgXDBUscn6" resolve="brand" />
         </node>
-        <node concept="AaXS_" id="60SjN5wxGAV" role="1gef55">
-          <property role="TrG5h" value="individual2" />
-          <property role="1g8QTC" value="2" />
-          <ref role="1geqf$" node="3AgXDBUrUxC" resolve="category" />
+        <node concept="AaXS_" id="7HMP_cFqENu" role="1gef55">
+          <property role="TrG5h" value="indiv2" />
+          <property role="1g8QTC" value="53" />
+          <ref role="1geqf$" node="3AgXDBUscn6" resolve="brand" />
         </node>
       </node>
     </node>

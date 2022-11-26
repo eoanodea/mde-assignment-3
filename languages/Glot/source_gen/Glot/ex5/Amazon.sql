@@ -24,4 +24,5 @@ CREATE TABLE brand (
 )
 
 hello
-  index1
+SELECT * (
+    FROM brand 234,53,
