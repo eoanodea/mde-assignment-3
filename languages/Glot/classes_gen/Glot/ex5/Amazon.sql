@@ -24,4 +24,5 @@ CREATE TABLE brand (
 )
 
 hello
-  index1    ind1   ind2 
+SELECT * (
+    FROM brand    WHERE id= index1
