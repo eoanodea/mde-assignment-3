@@ -23,6 +23,7 @@ CREATE TABLE brand (
   url VARCHAR(255)
 )
 
-hello
 SELECT * (
-    FROM brand 234,53,
+    FROM brand
+    WHERE id= 1 OR id= 99
+)

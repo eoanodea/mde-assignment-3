@@ -35,6 +35,7 @@
         <reference id="2235370616159566914" name="foreignKey" index="12zdRT" />
       </concept>
       <concept id="3796981848804124687" name="Glot.structure.Page" flags="ng" index="3S8JVg">
+        <property id="7837849424174666211" name="URL" index="AaZd_" />
         <child id="7837849424174679264" name="content" index="AaMpA" />
       </concept>
       <concept id="3796981848804203971" name="Glot.structure.Element" flags="ng" index="3S9gGs">
@@ -143,19 +144,20 @@
         <ref role="3S9gGe" node="3AgXDBUrUy9" resolve="image" />
       </node>
     </node>
-    <node concept="3S8JVg" id="7HMP_cFjxAC" role="3S8J4p">
-      <property role="TrG5h" value="hello" />
-      <node concept="Ac$iG" id="7HMP_cFk855" role="AaMpA">
-        <property role="TrG5h" value="index1" />
+    <node concept="3S8JVg" id="7HMP_cFut9f" role="3S8J4p">
+      <property role="TrG5h" value="Amazon" />
+      <property role="AaZd_" value="amazon.com" />
+      <node concept="Ac$iG" id="7HMP_cFut9h" role="AaMpA">
+        <property role="TrG5h" value="index_done_is" />
         <ref role="1geqf$" node="3AgXDBUscn6" resolve="brand" />
-        <node concept="AaXS_" id="7HMP_cFqy88" role="1gef55">
-          <property role="TrG5h" value="indiv1" />
-          <property role="1g8QTC" value="234" />
+        <node concept="AaXS_" id="7HMP_cFut9j" role="1gef55">
+          <property role="TrG5h" value="Sensei Yoda" />
+          <property role="1g8QTC" value="1" />
           <ref role="1geqf$" node="3AgXDBUscn6" resolve="brand" />
         </node>
-        <node concept="AaXS_" id="7HMP_cFqENu" role="1gef55">
-          <property role="TrG5h" value="indiv2" />
-          <property role="1g8QTC" value="53" />
+        <node concept="AaXS_" id="7HMP_cFut9l" role="1gef55">
+          <property role="TrG5h" value="Luke" />
+          <property role="1g8QTC" value="99" />
           <ref role="1geqf$" node="3AgXDBUscn6" resolve="brand" />
         </node>
       </node>
